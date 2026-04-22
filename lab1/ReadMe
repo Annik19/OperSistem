@@ -1,0 +1,241 @@
+Лабораторная 2 (инструкция)
+Цель: Практическое знакомство с управлением вводом/выводом в операционных системах Windows и кэширования операций ввода/вывода.
+План проведения занятия:
+1. Ознакомиться с краткими теоретическими сведениями.
+2. Ознакомиться с назначением и основными функциями Диспетчера задач Windows.
+3. Приобрести навыки применения командной строки Windows. Научиться запускать останавливать и проверять работу процессов.
+4. Сделать выводы о взаимосвязи запушенных процессов и оперативной памятью компьютера.
+5. Подготовить отчет для преподавателя о выполнении лабораторной работы и записать его в папку «Выполнение».
+Ход работы:
+Задание 1. 
+1)	Запустили Windows
+2)	Перевели курсор курсор на область с показаниями системной даты и времени и нажмите правый клик, будет выведено меню, в котором следует выбрать «Диспетчер задач».
+Задание 2.
+3)	Файл «openANDclose_Notepad» показывает команды вводимые в терминале на открытие и закрытие блокнота.
+4)	файлы «Open_WordPad» и «Close_WordPad» показывают команды открытия и закрытия приложения
+ 
+C:\Users\29494436>start WordPad.exe
+C:\Users\29494436>tasklist
+Имя образа                     PID Имя сессии          № сеанса       Память
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0         8 КБ
+System                           4 Services                   0       136 КБ
+Registry                        96 Services                   0    51 248 КБ
+smss.exe                       372 Services                   0       244 КБ
+csrss.exe                      540 Services                   0     2 756 КБ
+wininit.exe                    616 Services                   0     1 556 КБ
+services.exe                   776 Services                   0    13 596 КБ
+lsass.exe                      784 Services                   0    20 748 КБ
+svchost.exe                    912 Services                   0     3 888 КБ
+svchost.exe                    936 Services                   0    23 864 КБ
+fontdrvhost.exe                964 Services                   0     4 000 КБ
+svchost.exe                    420 Services                   0    15 640 КБ
+svchost.exe                    612 Services                   0    10 036 КБ
+svchost.exe                   1048 Services                   0    11 200 КБ
+svchost.exe                   1112 Services                   0     9 312 КБ
+svchost.exe                   1176 Services                   0     5 872 КБ
+svchost.exe                   1192 Services                   0     6 912 КБ
+svchost.exe                   1200 Services                   0    11 756 КБ
+svchost.exe                   1208 Services                   0     7 452 КБ
+svchost.exe                   1288 Services                   0     7 424 КБ
+svchost.exe                   1384 Services                   0     8 068 КБ
+svchost.exe                   1396 Services                   0    14 544 КБ
+WUDFHost.exe                  1660 Services                   0     6 560 КБ
+nvvsvc.exe                    1680 Services                   0     9 140 КБ
+nvSCPAPISvr.exe               1692 Services                   0     6 432 КБ
+svchost.exe                   1708 Services                   0    11 764 КБ
+svchost.exe                   1720 Services                   0    24 264 КБ
+svchost.exe                   1872 Services                   0    16 716 КБ
+svchost.exe                   1956 Services                   0     8 620 КБ
+svchost.exe                   1988 Services                   0     6 104 КБ
+svchost.exe                   2168 Services                   0    11 260 КБ
+svchost.exe                   2228 Services                   0     5 828 КБ
+svchost.exe                   2212 Services                   0     2 976 КБ
+svchost.exe                   2220 Services                   0     8 828 КБ
+svchost.exe                   2240 Services                   0     7 628 КБ
+svchost.exe                   2320 Services                   0     9 220 КБ
+svchost.exe                   2372 Services                   0     8 688 КБ
+Memory Compression            2412 Services                   0    20 236 КБ
+svchost.exe                   2456 Services                   0     7 384 КБ
+svchost.exe                   2464 Services                   0     5 208 КБ
+svchost.exe                   2608 Services                   0    12 532 КБ
+svchost.exe                   2696 Services                   0     8 316 КБ
+svchost.exe                   2692 Services                   0     5 696 КБ
+svchost.exe                   2732 Services                   0    12 008 КБ
+svchost.exe                   2784 Services                   0    13 096 КБ
+spoolsv.exe                   2896 Services                   0    11 832 КБ
+svchost.exe                   2916 Services                   0     7 304 КБ
+svchost.exe                   3000 Services                   0     9 268 КБ
+svchost.exe                   1460 Services                   0    22 572 КБ
+svchost.exe                   2100 Services                   0    10 472 КБ
+svchost.exe                   3116 Services                   0     9 980 КБ
+svchost.exe                   3124 Services                   0    22 632 КБ
+svchost.exe                   3132 Services                   0     5 636 КБ
+svchost.exe                   3140 Services                   0    22 860 КБ
+svchost.exe                   3272 Services                   0     7 000 КБ
+armsvc.exe                    3356 Services                   0     5 780 КБ
+erwin.exe                     3368 Services                   0     5 484 КБ
+svchost.exe                   3376 Services                   0     5 412 КБ
+svchost.exe                   3388 Services                   0    19 848 КБ
+svchost.exe                   3396 Services                   0     7 572 КБ
+svchost.exe                   3404 Services                   0     6 340 КБ
+ica.exe                       3424 Services                   0     8 324 КБ
+hasplms.exe                   3432 Services                   0     9 828 КБ
+pg_ctl.exe                    3440 Services                   0     6 096 КБ
+sqlwriter.exe                 3504 Services                   0     6 812 КБ
+MpDefenderCoreService.exe     3640 Services                   0    17 672 КБ
+WsNativePushService.exe       3724 Services                   0     3 852 КБ
+svchost.exe                   3732 Services                   0     5 336 КБ
+jhi_service.exe               3772 Services                   0     5 492 КБ
+MsMpEng.exe                   3784 Services                   0   174 216 КБ
+LMS.exe                       3948 Services                   0    11 148 КБ
+svchost.exe                   4092 Services                   0     6 000 КБ
+svchost.exe                   4120 Services                   0     6 112 КБ
+postgres.exe                  4868 Services                   0     3 808 КБ
+conhost.exe                   4876 Services                   0     3 828 КБ
+postgres.exe                  4472 Services                   0     2 548 КБ
+postgres.exe                  4540 Services                   0     3 308 КБ
+postgres.exe                  4448 Services                   0     3 236 КБ
+dllhost.exe                   2760 Services                   0     5 904 КБ
+hasplmv.exe                   5228 Services                   0     3 140 КБ
+hasplmv.exe                   5324 Services                   0     3 124 КБ
+svchost.exe                   5428 Services                   0     4 952 КБ
+svchost.exe                    124 Services                   0     4 864 КБ
+postgres.exe                  5668 Services                   0     2 728 КБ
+postgres.exe                  5724 Services                   0     3 372 КБ
+postgres.exe                  5696 Services                   0     3 220 КБ
+WmiPrvSE.exe                  4768 Services                   0    18 780 КБ
+svchost.exe                   4688 Services                   0     3 584 КБ
+svchost.exe                   4804 Services                   0     3 032 КБ
+svchost.exe                   4828 Services                   0     2 720 КБ
+svchost.exe                   4808 Services                   0     3 908 КБ
+NisSrv.exe                    5808 Services                   0     6 884 КБ
+svchost.exe                   1252 Services                   0     7 240 КБ
+svchost.exe                   2772 Services                   0     2 080 КБ
+svchost.exe                   3412 Services                   0     7 584 КБ
+sputnik_client.exe            3652 Services                   0       720 КБ
+CcmExec.exe                   5580 Services                   0    21 644 КБ
+WmiPrvSE.exe                  6640 Services                   0     5 492 КБ
+svchost.exe                   6852 Services                   0     2 824 КБ
+svchost.exe                   6912 Services                   0     3 528 КБ
+SearchIndexer.exe             7108 Services                   0    37 840 КБ
+svchost.exe                   3476 Services                   0     2 536 КБ
+WmiPrvSE.exe                  8544 Services                   0     1 976 КБ
+SecurityHealthService.exe     8932 Services                   0     4 428 КБ
+WmiPrvSE.exe                  6392 Services                   0     7 472 КБ
+klnagent.exe                 10176 Services                   0    18 464 КБ
+svchost.exe                   7696 Services                   0    21 148 КБ
+svchost.exe                   7452 Services                   0     3 648 КБ
+svchost.exe                   6500 Services                   0     3 252 КБ
+svchost.exe                   2496 Services                   0    17 148 КБ
+svchost.exe                   9476 Services                   0     9 168 КБ
+csrss.exe                     2272 Console                    2     5 168 КБ
+winlogon.exe                  6668 Console                    2     9 548 КБ
+dwm.exe                       2588 Console                    2    34 480 КБ
+fontdrvhost.exe              10000 Console                    2    20 328 КБ
+svchost.exe                  10164 Services                   0     6 920 КБ
+ica.exe                       8880 Console                    2     9 972 КБ
+svchost.exe                   9904 Console                    2    17 032 КБ
+svchost.exe                   1976 Console                    2    10 824 КБ
+sihost.exe                    1676 Console                    2    20 420 КБ
+taskhostw.exe                 6492 Console                    2    11 904 КБ
+explorer.exe                 10140 Console                    2   113 756 КБ
+svchost.exe                   1980 Console                    2    19 116 КБ
+ShellExperienceHost.exe       7832 Console                    2    43 684 КБ
+SearchUI.exe                  8524 Console                    2    55 984 КБ
+ctfmon.exe                    6636 Console                    2    15 884 КБ
+RuntimeBroker.exe             9252 Console                    2    28 264 КБ
+RuntimeBroker.exe             7280 Console                    2    22 032 КБ
+SCNotification.exe            2852 Console                    2    10 744 КБ
+RuntimeBroker.exe             7864 Console                    2    18 040 КБ
+smartscreen.exe               7508 Console                    2     8 744 КБ
+SecurityHealthSystray.exe     7412 Console                    2     7 808 КБ
+NvBackend.exe                 7836 Console                    2    10 360 КБ
+RAVCpl64.exe                  7648 Console                    2    11 764 КБ
+igfxtray.exe                  5464 Console                    2     7 996 КБ
+hkcmd.exe                     7604 Console                    2     7 892 КБ
+igfxpers.exe                  8516 Console                    2     8 556 КБ
+jusched.exe                   6868 Console                    2    12 296 КБ
+WSHelper.exe                  1468 Console                    2     2 160 КБ
+svchost.exe                   6672 Console                    2    11 056 КБ
+jucheck.exe                   9628 Console                    2    13 976 КБ
+svchost.exe                   7356 Services                   0     6 620 КБ
+chrome.exe                    8512 Console                    2   108 260 КБ
+chrome.exe                    4160 Console                    2     3 028 КБ
+chrome.exe                     716 Console                    2    69 488 КБ
+chrome.exe                    5608 Console                    2    30 096 КБ
+chrome.exe                    3812 Console                    2     6 220 КБ
+chrome.exe                    8556 Console                    2    18 384 КБ
+chrome.exe                    3056 Console                    2     3 172 КБ
+dllhost.exe                   5380 Console                    2     7 016 КБ
+WsToastNotification.exe       8644 Console                    2     3 640 КБ
+conhost.exe                   6068 Console                    2     3 532 КБ
+chrome.exe                     660 Console                    2   114 960 КБ
+chrome.exe                   10132 Console                    2   135 740 КБ
+chrome.exe                    5476 Console                    2    98 036 КБ
+chrome.exe                    6480 Console                    2    55 684 КБ
+firefox.exe                   3308 Console                    2   423 512 КБ
+crashhelper.exe               4436 Console                    2     6 760 КБ
+firefox.exe                   7380 Console                    2   355 228 КБ
+firefox.exe                    624 Console                    2    11 196 КБ
+firefox.exe                   2392 Console                    2    15 036 КБ
+firefox.exe                   8768 Console                    2    59 536 КБ
+firefox.exe                   7776 Console                    2    96 224 КБ
+firefox.exe                   7724 Console                    2    15 288 КБ
+firefox.exe                   6400 Console                    2   155 708 КБ
+WindowsInternal.Composabl     8724 Console                    2    46 312 КБ
+firefox.exe                  10044 Console                    2    45 800 КБ
+firefox.exe                   3704 Console                    2   114 796 КБ
+firefox.exe                   6372 Console                    2    30 112 КБ
+firefox.exe                   8892 Console                    2    30 108 КБ
+firefox.exe                   8112 Console                    2   126 120 КБ
+firefox.exe                   5076 Console                    2    30 036 КБ
+WINWORD.EXE                    128 Console                    2   191 892 КБ
+svchost.exe                   4320 Services                   0     6 992 КБ
+SearchProtocolHost.exe        7204 Console                    2     7 956 КБ
+svchost.exe                   8204 Services                   0     7 988 КБ
+cmd.exe                       2512 Console                    2    13 844 КБ
+conhost.exe                   9180 Console                    2    18 932 КБ
+wordpad.exe                   9700 Console                    2    51 100 КБ
+svchost.exe                   1256 Console                    2     7 384 КБ
+WmiPrvSE.exe                  3908 Services                   0    13 988 КБ
+tasklist.exe                  3012 Console                    2     7 900 КБ
+ 
+Задание 3.
+Демонстрация открытия и закрытия файла «explorer.exe». Название файлов: «Open_explorer» и «Close_explorer».
+ 
+Контрольные вопросы (ответы): 
+1. Суть управления вводом/выводом в ОС
+Суть управления вводом/выводом (I/O) заключается в обеспечении эффективного, надежного и унифицированного взаимодействия центрального процессора и программ с периферийными устройствами (дисками, мониторами, клавиатурами, сетями). 
+•	Драйверы: Скрытие специфики управления конкретным оборудованием за единым интерфейсом.
+•	Буферизация: Временное хранение данных для сглаживания разницы скоростей между устройствами и ЦП.
+•	Кэширование: Использование быстрой памяти для ускорения доступа к данным. 
+2. Характеристика и функции «Диспетчера задач Windows»
+«Диспетчер задач» — это системный монитор и менеджер запуска, входящий в состав Windows. Он предоставляет информацию о производительности компьютера, процессах, службах, сетевой активности и запущенных приложениях.
+Основные функции: 
+•	Мониторинг использования ЦП, памяти, диска и сети.
+•	Принудительное завершение зависших процессов.
+•	Управление приоритетами процессов.
+•	Управление автозагрузкой программ.
+•	Запуск и остановка системных служб.
+•	Просмотр активных пользователей. 
+3. Что такое процесс в операционной системе?
+Процесс — это «программа в стадии исполнения». Это единица работы, которой операционная система выделяет ресурсы (память, время процессора, дескрипторы файлов). Процесс включает в себя программный код, данные и контекст выполнения. 
+Корпоративный портал ТПУ
+4. Сходство и различие «приложения» и «процесса»
+•	Приложение (программа): Файл на диске, набор инструкций (статичный объект). Пример: chrome.exe на жестком диске.
+•	Процесс: Экземпляр запущенного приложения в оперативной памяти (динамичный объект). Пример: Запущенный браузер Google Chrome в диспетчере задач.
+•	Сходство: Процесс — это результат работы приложения.
+•	Различие: Одно приложение может порождать несколько процессов (например, вкладки браузера).
+5. Что такое служба в операционной системе?
+Служба (сервис) — это специальный тип процесса, который запускается и работает в фоновом режиме (обычно при загрузке системы) без прямого взаимодействия с пользователем. Службы выполняют критические задачи: работа с сетью, печатью, обновлениями, безопасность. 
+6. Различие между «службой» и «процессом»
+Хотя служба — это процесс, между ними есть разница:
+•	Служба: Запускается системой (а не пользователем), работает в фоне, управляется «Диспетчером служб» (services.msc), работает даже без входа пользователя в систему. Пример: Windows Update, Print Spooler.
+•	Процесс: Чаще всего инициируется пользователем или другим приложением, работает в текущей сессии. Пример: notepad.exe (блокнот).
+7. Команды работы с процессами (командная строка Windows)
+•	tasklist: Вывод списка всех текущих процессов с указанием PID (ID процесса).
+•	taskkill: Завершение процесса (по PID или имени), например: taskkill /F /IM notepad.exe (принудительно закрыть блокнот).
+•	start: Запуск новой программы или команды.
+•	wmic process call create "имя_процесса": Расширенный запуск процесса.
+
