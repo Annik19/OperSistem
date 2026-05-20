@@ -170,5 +170,5 @@ echo $PPID
 
 ![PashaLka](1.png)
 
-<img src="http://www.w3.org/2000/svg" width="600" height="300" frameborder="0" scrolling="no" /></img>
+<img src="https://ru.pinterest.com/pin/1100919071397388148/visual-search/?x=16&y=16&w=532&h=532&cropSource=6&surfaceType=flashlight" width="60" height="30" frameborder="0" scrolling="no" /></img>
 
