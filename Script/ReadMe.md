@@ -10,3 +10,7 @@
 
 ![alt text](3.png)
 
+**Добавление**
+current_date=$(date +"%Y-%m-%d")
+echo current_date #Вывод текущей даты
+
